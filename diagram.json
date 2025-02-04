@@ -22,14 +22,14 @@
         "id": "led2",
         "top": 188.4,
         "left": -63.4,
-        "attrs": { "color": "red" }
+        "attrs": { "color": "blue" }
       },
       {
         "type": "wokwi-led",
         "id": "led3",
         "top": 236.4,
         "left": -63.4,
-        "attrs": { "color": "yellow" }
+        "attrs": { "color": "red" }
       },
       {
         "type": "wokwi-resistor",
@@ -72,11 +72,11 @@
       [ "pico:GND.2", "led2:C", "black", [ "h-28.8", "v-28.8", "h-182.4", "v48" ] ],
       [ "led2:C", "led3:C", "black", [ "v0", "h-38", "v48" ] ],
       [ "led3:C", "led1:C", "black", [ "v0", "h-38", "v48" ] ],
-      [ "r3:1", "pico:GP11", "green", [ "v0", "h38.4", "v-38.4" ] ],
-      [ "r2:1", "pico:GP13", "green", [ "v0", "h28.8", "v57.6" ] ],
-      [ "r1:1", "pico:GP12", "green", [ "v0", "h19.2", "v9.6" ] ],
       [ "pico:GP5", "btn1:2.r", "green", [ "h-19.2", "v-28.8" ] ],
-      [ "pico:GND.1", "btn1:1.r", "black", [ "h-9.6", "v-38.4" ] ]
+      [ "pico:GND.1", "btn1:1.r", "black", [ "h-9.6", "v-38.4" ] ],
+      [ "pico:GP13", "r1:1", "green", [ "h-38.4", "v-19.16" ] ],
+      [ "r2:1", "pico:GP12", "green", [ "v0", "h38.4", "v48" ] ],
+      [ "pico:GP11", "r3:1", "green", [ "h-28.8", "v48" ] ]
     ],
     "dependencies": {}
   }
